@@ -16,7 +16,7 @@ public class Book {
     }
 
     @Id
-    @NotNull
+    @javax.validation.constraints.NotNull
     @Column(name = "bk_code")
     private Integer bookCode;
     @NotNull

@@ -5,14 +5,17 @@ import com.google.common.base.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Embeddable
 public class AuthorID implements Serializable {
 
     @Column(name = "bk_code")
+    @NotNull
     private Integer bookCode;
     @Column(name = "wr_id")
+    @NotNull
     private Integer writerID;
 
     public AuthorID(){
